@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    background-color: #bbc6f6;
+}
+
+.quote-container {
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 10px 20px 0 rgb(0, 0, 0, 0.15)
+}
+
+.quote-container h1 {
+    font-size: 45px;
+    position: relative;
+    padding: 10px;
+}
+
+.quote-container h1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    bottom: 0;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgb(23, 124, 229);
+}
+
+.quote-container .qoute {
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.quote-container .qoute::before,
+.quote-container .qoute::after {
+    content: '"';
+}
+
+.quote-container .author {
+    width: fit-content;
+    font-size: 18px;
+    position: relative;
+    margin-left: auto;
+    padding: 5px;
+}
+
+.quote-container .author::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(23, 124, 229);
+}
+
+.buttons {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.new {
+    background-color: rgb(23, 124, 229);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.twitter {
+    background-color: transparent;
+    border: 1px solid rgb(23, 124, 229);
+    outline: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: rgb(23, 124, 229);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.twitter i {
+    margin-right: 5px;
+}
